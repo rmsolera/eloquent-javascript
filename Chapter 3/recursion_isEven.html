@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+    const isEven = (num) => {
+        if (num == 0) { return true }
+        else if (num == 1) {return false}
+        else if (num > 1) {return isEven(num - 2) }
+        else { return false };
+    }
+    document.write(isEven(4));
+    document.write(isEven(75));
+    document.write(isEven(-1));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
